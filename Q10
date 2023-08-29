@@ -1,0 +1,27 @@
+//Escreva um programa que receba duas strings e verifique se elas são anagramas. Informe ao usuário se são ou não.
+package main
+
+import "fmt"
+
+func main() {
+	p1 := "undertale"
+	p2 := "deltarune"
+
+	if len(palavra) != len(palavra2) {
+		fmt.Println("As palavras não são anagramas. ")
+	}
+
+	contador := 0
+	for i := 0; i < len(p1); i++ {
+		for j := 0; j < len(p2); j++ {
+			if palavra[i] == p2[j] {
+				contador++
+			}
+		}
+	}
+	if contador == len(p1) {
+		fmt.Println("Essas palavras são anagramas")
+	} else {
+		fmt.Println("Essas palavaras não são anagramas")
+	}
+}
